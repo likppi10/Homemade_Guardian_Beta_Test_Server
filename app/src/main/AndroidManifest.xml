@@ -16,7 +16,7 @@
         android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.common.GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/new_app_logos_round"
-        android:label="자취방 수호대"
+        android:label="자취방 수호대 테스트 버전 (파베 따로)"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
