@@ -73,7 +73,7 @@ public class PhotoGridAdapter extends SelectableAdapter<PhotoGridAdapter.PhotoVi
       } else {
         PhotoModel = photoModelList.get(Position);
       }
-            Uri URI = FileProvider.getUriForFile(Context, "bias.zochiwon_suhodae.homemade_guardian_beta.provider", new File(PhotoModel.getPhoto_Path()));
+            Uri URI = FileProvider.getUriForFile(Context, "bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.provider", new File(PhotoModel.getPhoto_Path()));
       Glide.with(Context)
               .load(URI)
               .apply(new RequestOptions()

@@ -19,8 +19,8 @@ public class Util {                                                             
     public static void showMarketToast(Activity Activity, String Msg){ Toast.makeText(Activity, Msg, Toast.LENGTH_SHORT).show(); }
     public static void showCommunityToast(Activity Activity, String Msg){ Toast.makeText(Activity, Msg, Toast.LENGTH_SHORT).show(); }
 
-    public static boolean isMarketStorageUrl(String URL){ return Patterns.WEB_URL.matcher(URL).matches() && URL.contains("https://firebasestorage.googleapis.com/v0/b/homemade-guardian-beta.appspot.com/o/MARKETS"); }
-    public static boolean isCommunityStorageUrl(String URL){ return Patterns.WEB_URL.matcher(URL).matches() && URL.contains("https://firebasestorage.googleapis.com/v0/b/homemade-guardian-beta.appspot.com/o/COMMUNITY"); }
+    public static boolean isMarketStorageUrl(String URL){ return Patterns.WEB_URL.matcher(URL).matches() && URL.contains("https://firebasestorage.googleapis.com/v0/b/homemadeguardian-test.appspot.com/o/MARKETS"); }
+    public static boolean isCommunityStorageUrl(String URL){ return Patterns.WEB_URL.matcher(URL).matches() && URL.contains("https://firebasestorage.googleapis.com/v0/b/homemadeguardian-test.appspot.com/o/COMMUNITY"); }
     // part17 : 스토리지 주소에 대한 등록 [SHA1코드같은..] (16'45")
 
     public static String storageUrlToName(String URL){ return URL.split("\\?")[0].split("%2F")[URL.split("\\?")[0].split("%2F").length - 1]; }
