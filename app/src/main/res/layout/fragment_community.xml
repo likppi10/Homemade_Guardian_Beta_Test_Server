@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta.Main.bottombar.Market_BottombarFragment"
+    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.bottombar.Market_BottombarFragment"
     android:background="@color/pager_bg"
     android:orientation="vertical">
 

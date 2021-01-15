@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "bias.zochiwon_suhodae.homemade_guardian_beta"
+        applicationId "bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 9

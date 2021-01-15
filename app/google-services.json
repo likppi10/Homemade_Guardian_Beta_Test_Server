@@ -1,87 +1,41 @@
 {
   "project_info": {
-    "project_number": "828573370868",
-    "firebase_url": "https://homemade-guardian-beta.firebaseio.com",
-    "project_id": "homemade-guardian-beta",
-    "storage_bucket": "homemade-guardian-beta.appspot.com"
+    "project_number": "466249570489",
+    "project_id": "homemadeguardian-test",
+    "storage_bucket": "homemadeguardian-test.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:828573370868:android:a064a876e40fe1013f51a1",
+        "mobilesdk_app_id": "1:466249570489:android:e625febee57f87e347e368",
         "android_client_info": {
-          "package_name": "bias.zochiwon_suhodae.homemade_guardian_beta"
+          "package_name": "bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server"
         }
       },
       "oauth_client": [
         {
-          "client_id": "828573370868-92rrvn30fmd0nu7lcbh2i39u2ajdk4jn.apps.googleusercontent.com",
+          "client_id": "466249570489-lmte1a8f7dbisaapdpesop9ijgh5634h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "bias.zochiwon_suhodae.homemade_guardian_beta",
+            "package_name": "bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server",
             "certificate_hash": "f46837e3e52e595462ec1de50f3615ada79e98e3"
           }
         },
         {
-          "client_id": "828573370868-bdc60eiotgqd7i1qsah2vgfm15uk6m3j.apps.googleusercontent.com",
+          "client_id": "466249570489-6jhkr7t4uu3a5grrntd86cd9g0am1i34.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBDnkkCDEZe-xZSp4lcyYpG_pKlw9B4QwM"
+          "current_key": "AIzaSyCnSgAU6xv_yqdHK3IXGdveKYmOtn5xTag"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "828573370868-bdc60eiotgqd7i1qsah2vgfm15uk6m3j.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:828573370868:android:1e5bd51684a095c43f51a1",
-        "android_client_info": {
-          "package_name": "com.example.homemade_guardian_beta"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "828573370868-ab7d6smnglgv5v663hi0cqokq4471cgs.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.homemade_guardian_beta",
-            "certificate_hash": "f46837e3e52e595462ec1de50f3615ada79e98e3"
-          }
-        },
-        {
-          "client_id": "828573370868-lopvoft2pntfvhfmhvk6nspb64tbm4hq.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.homemade_guardian_beta",
-            "certificate_hash": "ef2780bf68631b43563e4640948bafa427b735c9"
-          }
-        },
-        {
-          "client_id": "828573370868-bdc60eiotgqd7i1qsah2vgfm15uk6m3j.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBDnkkCDEZe-xZSp4lcyYpG_pKlw9B4QwM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "828573370868-bdc60eiotgqd7i1qsah2vgfm15uk6m3j.apps.googleusercontent.com",
+              "client_id": "466249570489-6jhkr7t4uu3a5grrntd86cd9g0am1i34.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

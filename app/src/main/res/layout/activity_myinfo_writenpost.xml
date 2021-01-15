@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pager_bg"
-    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MainActivity">
+    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MainActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/TopNavigationView"

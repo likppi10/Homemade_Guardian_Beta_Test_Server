@@ -174,7 +174,7 @@
             android:background="@drawable/chatbutton_layout"
             android:text="채팅하기"
             android:textColor="@color/img_loding_placeholder" />
-        <bias.zochiwon_suhodae.homemade_guardian_beta.Main.common.BackPressEditText
+        <bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.common.BackPressEditText
             android:id="@+id/Comment_Input_EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

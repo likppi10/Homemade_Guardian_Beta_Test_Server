@@ -14,7 +14,7 @@
 
       <fragment
           android:id="@+id/PhotoPickerFragment"
-          android:name="bias.zochiwon_suhodae.homemade_guardian_beta.photo.fragment.PhotoPickerFragment"
+          android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.photo.fragment.PhotoPickerFragment"
           android:layout_width="match_parent"
           android:layout_height="match_parent" />
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="bias.zochiwon_suhodae.homemade_guardian_beta">
+    package="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
@@ -13,7 +13,7 @@
 
 
     <application
-        android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.common.GlobalApplication"
+        android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.common.GlobalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/new_app_logos_round"
         android:label="자취방 수호대 테스트 버전 (파베 따로)"
@@ -29,12 +29,12 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/complete" />
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.LoginActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.LoginActivity" android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.chat.activity.ChatActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.chat.activity.ChatActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"/>
 
-        <service android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.common.MyFirebaseMessagingService"
+        <service android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.common.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true"
             android:stopWithTask="false">
@@ -47,7 +47,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="bias.zochiwon_suhodae.homemade_guardian_beta.provider"
+            android:authorities="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -56,7 +56,7 @@
         </provider>
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="bias.zochiwon_suhodae.homemade_guardian_beta.provider"
+            android:authorities="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -65,47 +65,47 @@
 
         </provider>
 
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.MarketActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.MarketActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.ModifyMarketActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.ModifyMarketActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.BasicActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.BasicActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.GalleryActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.GalleryActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MemberInitActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MemberInitActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.HostModelActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.HostModelActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.SearchActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.SearchActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.SearchResultActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.SearchResultActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.photo.activity.PhotoPickerActivity" android:screenOrientation="portrait"
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.photo.activity.PhotoPickerActivity" android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.market.activity.EnlargeImageActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.EnlargeImageActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.WriteMarketActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.WriteMarketActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.WriteCommunityActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.WriteCommunityActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.community.activity.CommunityActivity"  android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.CommunityActivity"  android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.community.activity.EnlargeCommunityImageActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.EnlargeCommunityImageActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.community.activity.ModifyCommunityActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.ModifyCommunityActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.community.activity.SearchCommunityActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.SearchCommunityActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.community.activity.SearchCommunityResultActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.SearchCommunityResultActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MyInfoPostActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MyInfoPostActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MyInfo_WritenPostActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MyInfo_WritenPostActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.UpdateInfoActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.UpdateInfoActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MainActivity" android:screenOrientation="portrait">
+        <activity android:name="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MainActivity" android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

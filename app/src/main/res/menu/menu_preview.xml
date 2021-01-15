@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta.Main.activity.MainActivity">
+    tools:context="bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.activity.MainActivity">
 
  <item
       android:id="@+id/Comment_Delete_Button"

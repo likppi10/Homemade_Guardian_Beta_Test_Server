@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <bias.zochiwon_suhodae.homemade_guardian_beta.photo.common.widget.TouchImageView
+    <bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.photo.common.widget.TouchImageView
         android:id="@+id/Enlarge_Pager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

@@ -165,7 +165,7 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:background="@color/color_00000000">
-        <bias.zochiwon_suhodae.homemade_guardian_beta.Main.common.BackPressEditText
+        <bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.common.BackPressEditText
             android:id="@+id/Comment_Input_EditText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
