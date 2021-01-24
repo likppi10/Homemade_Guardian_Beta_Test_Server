@@ -70,7 +70,7 @@ public class ImageCaptureManager extends Activity {
       }
       File PhotoFile = createImageFile();
       if (PhotoFile != null) {
-        Uri URI = FileProvider.getUriForFile(Context, "bias.zochiwon_suhodae.homemade_guardian_beta.provider", PhotoFile);
+        Uri URI = FileProvider.getUriForFile(Context, "bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.provider", PhotoFile);
         TakePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, URI);
       }
     }

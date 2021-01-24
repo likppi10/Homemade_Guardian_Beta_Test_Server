@@ -18,8 +18,10 @@ import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.bottombar.W
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.Main.common.Logout_Dialog;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.R;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.chat.activity.ChatActivity;
+import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.community.activity.CommunityActivity;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.market.activity.MarketActivity;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.model.chat.RoomModel;
+import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.model.community.CommunityModel;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.model.market.MarketModel;
 import bias.zochiwon_suhodae.homemade_guardian_beta_Test_Server.model.user.UserModel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -120,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements Serializable {   
                                 messageBody = getIntent().getStringExtra("messageBody");
 
                                 if(messageBody != null){
-                                    if(messageBody.equals("댓글이 달렸습니다!")){
+                                    if(messageBody.equals("물물교환 게시물의 댓글이 달렸습니다!")){
                                         final DocumentReference documentReference = FirebaseFirestore.getInstance().collection("MARKETS").document(Popup_Uid);
                                         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
                                             @Override
@@ -133,6 +135,25 @@ public class MainActivity extends AppCompatActivity implements Serializable {   
                                                             MarketModel intentmarketmodel = new MarketModel(Marketmodel.getMarketModel_Title(),Marketmodel.getMarketModel_Text(),Marketmodel.getMarketModel_ImageList(),Marketmodel.getMarketModel_DateOfManufacture(),Marketmodel.getMarketModel_Host_Uid(),Marketmodel.getMarketModel_Market_Uid(),Marketmodel.getMarketModel_Category(),Marketmodel.getMarketModel_LikeList(),Marketmodel.getMarketModel_HotMarket(),Marketmodel.getMarketModel_reservation(),Marketmodel.getMarketModel_deal(),Marketmodel.getMarketModel_CommentCount());
                                                             Intent intent = new Intent(getApplicationContext(), MarketActivity.class);
                                                             intent.putExtra("marketInfo", intentmarketmodel);
+                                                            startActivity(intent);
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    }else if(messageBody.equals("자유게시판의 댓글이 달렸습니다!")) {
+                                        final DocumentReference documentReference = FirebaseFirestore.getInstance().collection("COMMUNITY").document(Popup_Uid);
+                                        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                                            @Override
+                                            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                                                if (task.isSuccessful()) {
+                                                    DocumentSnapshot document = task.getResult();
+                                                    if (document != null) {
+                                                        if (document.exists()) {  //데이터의 존재여부
+                                                            final CommunityModel communityModel = document.toObject(CommunityModel.class);
+                                                            CommunityModel intentcommunitymodel = new CommunityModel(communityModel.getCommunityModel_Title(),communityModel.getCommunityModel_Text(),communityModel.getCommunityModel_ImageList(),communityModel.getCommunityModel_DateOfManufacture(),communityModel.getCommunityModel_Host_Uid(),communityModel.getCommunityModel_Community_Uid(),communityModel.getCommunityModel_LikeList(),communityModel.getCommunityModel_HotCommunity(),communityModel.getCommunityModel_CommentCount());
+                                                            Intent intent = new Intent(getApplicationContext(), CommunityActivity.class);
+                                                            intent.putExtra("communityInfo", intentcommunitymodel);
                                                             startActivity(intent);
                                                         }
                                                     }

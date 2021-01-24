@@ -99,6 +99,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging'
     implementation 'com.google.firebase:firebase-analytics'
 
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 
 }
 apply plugin: 'com.google.gms.google-services'

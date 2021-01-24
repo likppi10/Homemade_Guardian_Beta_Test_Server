@@ -314,7 +314,9 @@ public class MarketActivity extends BasicActivity {         // 1. 클래스 2. �
                         MarketActivity.this.Comment_Input_EditText.setText("");
                         InputMethodManager immhide = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                         immhide.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
-                        SendAlarm(Comment);
+                        if(!To_Usermodel.getUserModel_Uid().equals(CurrentUid)){
+                            SendAlarm(Comment);
+                        }
                     }
                     if (!CurrentUid.equals(Marketmodel.getMarketModel_Host_Uid())) {
                         Chat_With_MarketHost_Button.setVisibility(View.VISIBLE);
@@ -440,7 +442,7 @@ public class MarketActivity extends BasicActivity {         // 1. 클래스 2. �
                                             if (document != null) {
                                                 if (document.exists()) {  //데이터의 존재여부
                                                     UserModel TouserModel = document.toObject(UserModel.class);
-                                                    SendNotification.sendCommentNotification(TouserModel.getUserModel_Token(), userModel.getUserModel_NickName(), "댓글이 달렸습니다!", Marketmodel.getMarketModel_Market_Uid());
+                                                    SendNotification.sendCommentNotification(TouserModel.getUserModel_Token(), userModel.getUserModel_NickName(), "물물교환 게시물의 댓글이 달렸습니다!", Marketmodel.getMarketModel_Market_Uid());
                                                 }
                                             }
                                         }
